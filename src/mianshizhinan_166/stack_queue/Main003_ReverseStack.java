@@ -7,8 +7,12 @@ import java.util.Stack;
  * @version 2019/8/10
  *
  * 实现栈中元素逆序，要求只能使用递归函数实现，不能用其他数据结构。
+ *
+ * 解法
+ * 递归1：获取并删除栈底元素
+ * 递归2：利用递归，再加上递归1 把栈掏空，然后把从递归1中获得的元素 压回栈中。
  */
-public class Main03_ReverseStack {
+public class Main003_ReverseStack {
 
     private static Stack<Integer> stack = new Stack<>();
 

@@ -15,9 +15,9 @@ import java.util.Stack;
  *    如果大于，则依次将help栈中的元素取出，然后跟source栈弹出的元素做比较，如果小于，则放回source栈；
  *    大于则停止，并把help栈顶压入help栈，继续回到第一步开头。
  */
-public class Main05_SortByOneStack {
+public class Main005_SortByOneStack {
 
-    public Main05_SortByOneStack() {
+    public Main005_SortByOneStack() {
     }
 
     public void sort(Stack<Integer> source) {
@@ -64,7 +64,7 @@ public class Main05_SortByOneStack {
         source.push(1);
         source.push(8);
         // top->low  8 1 4 5 3 2
-        Main05_SortByOneStack sortByOneStack = new Main05_SortByOneStack();
+        Main005_SortByOneStack sortByOneStack = new Main005_SortByOneStack();
         sortByOneStack.sort(source);
         System.out.println(source);
     }

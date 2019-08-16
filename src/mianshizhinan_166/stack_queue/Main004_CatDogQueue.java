@@ -4,7 +4,7 @@ package mianshizhinan_166.stack_queue;
  * @author guoxin
  * @version 2019/8/13
  */
-public class Main04_CatDogQueue {
+public class Main004_CatDogQueue {
 
 }
 
