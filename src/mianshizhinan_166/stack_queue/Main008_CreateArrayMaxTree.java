@@ -34,6 +34,7 @@ public class Main008_CreateArrayMaxTree {
         HashMap<Node,Node> lBigMap = new HashMap<>();
         HashMap<Node,Node> rBigMap = new HashMap<>();
 
+        // 找左边第一个比它大的数。栈中元素要求 栈底只能放比栈顶大的元素，有小的元素必须先弹出
         for (int i = 0; i < nArr.length; i++) {
             Node curNode = nArr[i];
             while (!stack.empty() && stack.peek().value < curNode.value) {
@@ -44,7 +45,7 @@ public class Main008_CreateArrayMaxTree {
         while (!stack.empty()) {
             popStackSetMap(stack, lBigMap);
         }
-
+        // 找右边第一个比它大的数。栈中元素要求 栈底只能放比栈顶大的元素，有小的元素必须先弹出
         for (int i = nArr.length-1; i >= 0; i--) {
             Node curNode = nArr[i];
             while (!stack.empty() && stack.peek().value < curNode.value) {
